@@ -1,0 +1,14 @@
+{
+  "browsers": ["chrome"],
+  "src": ["**/*.test.ts"],
+  "reporter": [
+    {
+      "name": "spec"
+    },
+    {
+      "name": "json",
+      "output": "reports/testcafe-results.json"
+    }
+  ],
+  "speed": 0.6
+}
