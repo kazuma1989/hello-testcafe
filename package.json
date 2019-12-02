@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "kazuma1989 <kazuma.ebina@quipper.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "testcafe": "^1.7.0"
+  }
 }
