@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "kazuma1989 <kazuma.ebina@quipper.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "testcafe chrome first.test.ts"
+  },
   "dependencies": {
     "testcafe": "^1.7.0"
   }
