@@ -12,6 +12,7 @@ Requirements:
 Clone the repo, then run:
 
 ```zsh
+npm install
 npm test
 ```
 
