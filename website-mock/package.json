@@ -1,0 +1,14 @@
+{
+  "name": "website-mock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kazuma1989 <kazuma.ebina@quipper.com>",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0"
+  }
+}
