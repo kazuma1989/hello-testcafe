@@ -4,13 +4,15 @@
 
 ## Getting Started
 
-- Node.js (LTS)
-- Yarn (latest)
+Requirements:
+
+- Node.js (LTS) installed
+- Browsers installed
 
 Clone the repo, then run:
 
 ```zsh
-yarn test
+npm test
 ```
 
 ## What is TestCafe?
@@ -21,7 +23,7 @@ yarn test
 ## Why do I use TestCafe?
 
 - I need to write tests for multi browsers
-- I don't want to install the drivers in addition to the browsers themselves in CI environments
+- I don't want to install the drivers for each browser in CI environments
 
 |          | TestCafe                            | Selenium                            | Cypress         | Puppeteer |
 | -------- | ----------------------------------- | ----------------------------------- | --------------- | --------- |
