@@ -8,7 +8,9 @@ fixture("Getting Started")
   });
 
 test("My first test", async t => {
-  await t.typeText("#developer-name", "John Doe").click("#submit-button");
+  await t.typeText("#name", "john");
+  await t.typeText("#pass", "john");
+  await t.click("#submit-button");
 
   const articleHeader = Selector(".result-content").find("h1");
 
