@@ -28,8 +28,21 @@ app.use(express.static(__dirname));
 app.listen(port);
 
 // ----------
+// Landing Page (another entry point for the main app)
+const lpPort = 1235;
+
+const lp = express();
+lp.use(express.urlencoded());
+lp.use(basicAuth);
+
+// Static contents
+lp.use(express.static(`${__dirname}/lp`));
+
+lp.listen(lpPort);
+
+// ----------
 // Auth app
-const authPort = 1235;
+const authPort = 1236;
 
 const authApp = express();
 authApp.use(express.urlencoded());
@@ -45,5 +58,8 @@ authApp.post("/login", (req, resp) => {
 
   resp.redirect(`http://localhost:${port}/success.html`);
 });
+
+// Static contents
+authApp.use(express.static(`${__dirname}/auth`));
 
 authApp.listen(authPort);
