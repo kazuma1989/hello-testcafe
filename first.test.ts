@@ -1,8 +1,11 @@
 import { Selector } from "testcafe";
 
-fixture("Getting Started").page(
-  "http://devexpress.github.io/testcafe/example/"
-);
+fixture("Getting Started")
+  .page("http://localhost:1234")
+  .httpAuth({
+    username: "admin",
+    password: "admin"
+  });
 
 test("My first test", async t => {
   await t.typeText("#developer-name", "John Doe").click("#submit-button");
