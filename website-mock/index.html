@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mock web-site</title>
+
+    <style>
+      .login {
+        display: grid;
+        grid-template:
+          "name-label name-input" auto
+          "pass-label pass-input" auto
+          "button button" auto
+          / 6em 12em;
+      }
+      .login-button {
+        grid-area: button;
+      }
+    </style>
   </head>
   <body>
     <h1>Hello</h1>
 
-    <form method="GET" action="./success.html">
-      <label for="developer-name">Developer name</label>
-      <input type="text" name="" id="developer-name" />
+    <form class="login" method="POST" action="/login">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" />
 
-      <button type="submit" id="submit-button">Submit</button>
+      <label for="pass">Password</label>
+      <input type="password" name="pass" id="pass" />
+
+      <button class="login-button" type="submit" id="submit-button">
+        Submit
+      </button>
     </form>
   </body>
 </html>
